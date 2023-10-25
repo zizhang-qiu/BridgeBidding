@@ -2,6 +2,10 @@ This directory contains codes for supervised learning of Bridge bidding.
 
 The code is provided with a environment of Contract Bridge to create observation tensors in `bridge_state.py`, which is a Python reimplementation based on [OpenSpiel](https://github.com/deepmind/open_spiel) implementation of Contract Bridge.
 
+# Environment setup
+
+We use Python 3.8 and Pytorch 2.0 to make datasets and train the network.
+
 # Making datasets
 You can run the file `make_dataset.py` to generate a dataset of Bridge bidding.
 
