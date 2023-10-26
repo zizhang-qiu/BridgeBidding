@@ -122,7 +122,3 @@ PBN_TEMPLATE = """[Event ""]
 [BCFlags "1f"]"""
 
 PLUS_MINUS_SYMBOL = "\u00B1"
-SECONDS_PER_MINUTE = 60
-
-if __name__ == '__main__':
-    print(PBN_PREFIX + PBN_TEMPLATE.format(dealer="N", deal=""))

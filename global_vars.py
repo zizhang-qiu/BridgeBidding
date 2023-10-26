@@ -7,7 +7,7 @@
 """
 from collections import namedtuple
 from enum import IntEnum
-from typing import List, Union, Tuple
+from typing import List, Union
 
 import numpy as np
 
@@ -22,5 +22,3 @@ class PlayerId(IntEnum):
 
 
 PlayerAction = namedtuple("PlayerAction", ["player", "action"])
-
-DEFAULT_RL_DATASET_DIR = r"D:\RL\bridge_research\src\dataset\rl_data"

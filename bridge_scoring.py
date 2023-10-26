@@ -8,8 +8,7 @@
 from bisect import bisect
 
 from bridge_vars import Denomination, DoubleStatus, DENOMINATION_STR, PLAYER_STR, NUM_DENOMINATIONS, \
-    NUM_PLAYERS, NUM_DOUBLE_STATES, MAX_SCORE
-from common_utils.assert_utils import assert_in_range
+    NUM_PLAYERS, NUM_DOUBLE_STATES
 
 
 class Contract:
@@ -175,8 +174,6 @@ def get_imp(my: int, other: int) -> int:
         int: imp this board
 
     """
-    assert_in_range(my, -MAX_SCORE, MAX_SCORE)
-    assert_in_range(other, -MAX_SCORE, MAX_SCORE)
     imp_table = [
         15, 45, 85, 125, 165, 215, 265, 315, 365, 425, 495, 595, 745, 895,
         1095, 1295, 1495, 1745, 1995, 2245, 2495, 2995, 3495, 3995]

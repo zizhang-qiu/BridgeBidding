@@ -54,7 +54,7 @@ def assert_in_range(real, range_left, range_right) -> NoReturn:
     Args:
         real: the real number
         range_left: the left range, it is closed
-        range_right: thr right range, it is open
+        range_right: the right range, it is open
 
     Returns:
         No return

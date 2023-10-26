@@ -16,7 +16,6 @@ from bridge_vars import NUM_CALLS
 
 class MLP(nn.Module):
     def __init__(self):
-        """The network used for the paper 'Human-Agent Cooperation in Bridge Bidding'."""
         super().__init__()
         self.net = nn.Sequential(
             nn.Linear(AUCTION_TENSOR_SIZE, 2048),
